@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		13D5B115294C08E000C10E28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13D5B114294C08E000C10E28 /* main.cpp */; };
+		13D5B11D294C0A3E00C10E28 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13D5B11B294C0A3E00C10E28 /* Game.cpp */; };
+		13D5B120294C0A7C00C10E28 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D5B11F294C0A7C00C10E28 /* GLUT.framework */; };
+		13D5B123294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D5B121294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib */; };
+		13D5B124294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 13D5B121294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		13D5B125294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D5B122294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib */; };
+		13D5B126294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 13D5B122294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		13D5B129294C0B0400C10E28 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D5B128294C0B0400C10E28 /* libSDL2-2.0.0.dylib */; };
+		13D5B12A294C0B0400C10E28 /* libSDL2-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 13D5B128294C0B0400C10E28 /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		13D5B12C294C0B1900C10E28 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D5B12B294C0B1900C10E28 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +29,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		13D5B127294C0AE600C10E28 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13D5B12A294C0B0400C10E28 /* libSDL2-2.0.0.dylib in Embed Libraries */,
+				13D5B126294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib in Embed Libraries */,
+				13D5B124294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13D5B111294C08E000C10E28 /* C++PE2022-Final */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++PE2022-Final"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D5B114294C08E000C10E28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		13D5B11B294C0A3E00C10E28 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		13D5B11C294C0A3E00C10E28 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		13D5B11F294C0A7C00C10E28 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		13D5B121294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../usr/local/Cellar/sdl2_ttf/2.20.1/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
+		13D5B122294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL_mixer-1.2.0.dylib"; path = "../../../usr/local/Cellar/sdl_mixer/1.2.12_5/lib/libSDL_mixer-1.2.0.dylib"; sourceTree = "<group>"; };
+		13D5B128294C0B0400C10E28 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../usr/local/Cellar/sdl2/2.26.1/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		13D5B12B294C0B1900C10E28 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +61,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D5B129294C0B0400C10E28 /* libSDL2-2.0.0.dylib in Frameworks */,
+				13D5B120294C0A7C00C10E28 /* GLUT.framework in Frameworks */,
+				13D5B123294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib in Frameworks */,
+				13D5B12C294C0B1900C10E28 /* OpenGL.framework in Frameworks */,
+				13D5B125294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +77,7 @@
 			children = (
 				13D5B113294C08E000C10E28 /* C++PE2022-Final */,
 				13D5B112294C08E000C10E28 /* Products */,
+				13D5B11E294C0A7C00C10E28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +93,22 @@
 			isa = PBXGroup;
 			children = (
 				13D5B114294C08E000C10E28 /* main.cpp */,
+				13D5B11B294C0A3E00C10E28 /* Game.cpp */,
+				13D5B11C294C0A3E00C10E28 /* Game.hpp */,
 			);
 			path = "C++PE2022-Final";
+			sourceTree = "<group>";
+		};
+		13D5B11E294C0A7C00C10E28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13D5B12B294C0B1900C10E28 /* OpenGL.framework */,
+				13D5B128294C0B0400C10E28 /* libSDL2-2.0.0.dylib */,
+				13D5B122294C0AE600C10E28 /* libSDL_mixer-1.2.0.dylib */,
+				13D5B121294C0AE600C10E28 /* libSDL2_ttf-2.0.0.dylib */,
+				13D5B11F294C0A7C00C10E28 /* GLUT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +121,7 @@
 				13D5B10D294C08E000C10E28 /* Sources */,
 				13D5B10E294C08E000C10E28 /* Frameworks */,
 				13D5B10F294C08E000C10E28 /* CopyFiles */,
+				13D5B127294C0AE600C10E28 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -120,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13D5B115294C08E000C10E28 /* main.cpp in Sources */,
+				13D5B11D294C0A3E00C10E28 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +290,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2_ttf/2.20.1/lib,
+					/usr/local/Cellar/sdl_mixer/1.2.12_5/lib,
+					/usr/local/Cellar/sdl2/2.26.1/lib,
+					/usr/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +306,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2_ttf/2.20.1/lib,
+					/usr/local/Cellar/sdl_mixer/1.2.12_5/lib,
+					/usr/local/Cellar/sdl2/2.26.1/lib,
+					/usr/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
