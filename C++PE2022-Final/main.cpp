@@ -2,7 +2,7 @@
 //  main.cpp
 //  C++PE2022-Final
 //
-//  Created by  on 2022/12/16.
+//  Created by mixtuti on 2022/12/16.
 //
 
 //#include <iostream>
