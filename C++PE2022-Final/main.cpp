@@ -2,7 +2,7 @@
 //  main.cpp
 //  C++PE2022-Final
 //
-//  Created by hw20a086 on 2022/12/16.
+//  Created by  on 2022/12/16.
 //
 
 //#include <iostream>
